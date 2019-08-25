@@ -1,42 +1,33 @@
-@import url('https://fonts.googleapis.com/css?family=Muli:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca|Lexend+Tera&display=swap');
 
-body {
-  font-family: 'Muli', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lexend Tera', sans-serif;
 }
 
-.pink {
-  background-color: #FFADD6;
+p {
+  font-family: 'Lexend Deca', sans-serif;
 }
 
-.greeen {
-  background-color: #00CC99;
+a {
+  font-size: 1.3rem;
+  font-family: 'Lexend Tera', sans-serif;
+  color: #333;
 }
 
-.tiny {
-  font-size: .5rem;
+.main-area {
+  border: 2rem solid #fff;
 }
 
-.spin {
-  -webkit-animation: spin 60s linear infinite;
-          animation: spin 60s linear infinite;
-
+.bg-light {
+  background-color: #efefef!important;
 }
 
-@-webkit-keyframes spin {
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  to {
-
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-.h3 {
-  line-height: 2.7rem;
+.my-portrait {
+  text-align: center;
+  width: 75%;
 }
