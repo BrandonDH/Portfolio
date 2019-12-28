@@ -1,33 +1,78 @@
-/* @import url('https://fonts.googleapis.com/css?family=Lexend+Deca|Lexend+Tera&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Lexend Tera', sans-serif;
+body {
+  font-family: 'Roboto Slab', serif;
 }
 
-p {
-  font-family: 'Lexend Deca', sans-serif;
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto Mono', monospace;
 }
 
-a {
-  font-size: 1.3rem;
-  font-family: 'Lexend Tera', sans-serif;
-  color: #333;
+.introduction {
+  font-weight: bold;
+  line-height: 3rem;
 }
 
-.main-area {
-  border: 2rem solid #fff;
-}
-
-.bg-light {
-  background-color: #efefef!important;
-}
-
-.my-portrait {
+a.link { 
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  display: block;
   text-align: center;
-  width: 75%;
-} */
+  width: 100%;
+  padding: 3rem 0;
+  margin: 0 0 1rem 0;
+  color: #fff;
+  background-size: cover;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+a.link:hover {
+  opacity: .9;
+  border-color:  #b4b3b3;
+}
+
+.img-block img {
+width: 100%;  
+}
+
+.img-block {
+  height: 200px;
+}
+
+.about-desc {
+  line-height: 2.2rem;
+}
+
+.github-social-icon {
+  width: 64px;
+}
+
+.dribbble-social-icon {
+  width: 180px;
+}
+
+.hay {
+  background-image: url(https://images.pexels.com/photos/1964474/pexels-photo-1964474.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+}
+
+.cairn {
+  background-image: url(https://images.pexels.com/photos/1029604/pexels-photo-1029604.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+}
+
+.gix {
+  background-image: url(https://images.pexels.com/photos/625219/pexels-photo-625219.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.cairn {
+  background-image: url(images/cairn-1.png);
+}
+
+.haiku {
+  background-image: url(images/haiku.png);
+}
+
+.githubgist {
+  background-image: url(images/gists.png);
+}
