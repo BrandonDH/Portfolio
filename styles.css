@@ -32,6 +32,8 @@ a.link {
   font-size: 3rem;
 }
 
+
+
 a.link:hover {
   opacity: .9;
   border-color:  #b4b3b3;
@@ -57,6 +59,11 @@ width: 100%;
   width: 180px;
 }
 
+.contact {
+  background-image: url(images/IMG_2251.jpg);
+}
+
+
 .hay {
   background-image: url(https://images.pexels.com/photos/1964474/pexels-photo-1964474.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
 }
@@ -76,6 +83,8 @@ width: 100%;
 .haiku {
   background-image: url(images/haiku.png);
 }
+
+
 
 .githubgist {
   background-image: url(images/gists.png);
