@@ -89,6 +89,14 @@ width: 100%;
   background-image: url(images/cairn-1.png);
 }
 
+.meridian {
+  background-image: url(images/meridian.jpg);
+}
+
+.candelabra {
+  background-image: url(images/candelabra.jpg);
+}
+
 .haiku {
   background-image: url(images/haiku.png);
   background-repeat: no-repeat;
