@@ -1,17 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alata&display=swap');
+
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
 @import url('https://fonts.googleapis.com/css?family=Public+Sans:300,400,500,700&display=swap');
 
 body {
-  font-family: 'Roboto Slab', serif;
+  /* font-family: 'Roboto Slab', serif; */
 }
 
-h1, h2, h3, h4, h5 {
+/* h1, h2, h3, h4, h5 {
   font-family: 'Roboto Mono', monospace;
-}
+} */
 
 .introduction {
-  font-weight: 800;
+/* font-weight: 800; */
   line-height: 3rem;
 }
 
@@ -31,6 +33,7 @@ a.link {
   background-size: cover;
   font-weight: 700;
   font-size: 3rem;
+  background-position: center;
 }
 
 a.link p {
@@ -91,6 +94,14 @@ width: 100%;
 
 .meridian {
   background-image: url(images/meridian.jpg);
+}
+
+.knosey {
+  background-image: url(images/knosey.jpg);
+}
+
+.aorb {
+  background-image: url(images/a-or-b.png);
 }
 
 .candelabra {
