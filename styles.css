@@ -34,7 +34,13 @@ a.link {
   font-weight: 700;
   font-size: 3rem;
   background-position: center;
+  /* text-shadow: 1px 6px 23px #27262666; */
 }
+
+span.project-language {
+  font-size: 1rem;
+}
+
 
 a.link p {
   font-size: .8rem;
@@ -106,6 +112,10 @@ width: 100%;
 
 .candelabra {
   background-image: url(images/candelabra.jpg);
+}
+
+.wtrmrk {
+  background-image: url(images/higher-quality-subtle.png);
 }
 
 .haiku {
