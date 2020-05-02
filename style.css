@@ -11,7 +11,7 @@ body {
 justify-content: flex-start;
 }
 
-.client-list, h2 {
+.client-list, h2, h1 {
   font-size: 3rem;
 }
 
@@ -27,6 +27,9 @@ justify-content: flex-start;
 }
 
 @media only screen and (max-width: 600px) {
+  .client-list, h2, h1 {
+    font-size: 2rem;
+  }
   .letter-grid {
     display: grid;
     grid-template-columns: 50% 50%;
