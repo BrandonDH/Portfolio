@@ -6,7 +6,7 @@ function setup() {
 
   flock = new Flock();
   // Add an initial set of boids into the system
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 100; i++) {
     let b = new Boid(width / 1,height / 1);
     flock.addBoid(b);
   }
