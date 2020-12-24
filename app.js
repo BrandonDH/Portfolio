@@ -1,7 +1,7 @@
 let flock;
 
 function setup() {
-  let useCanvas = createCanvas(800, 400);
+  let useCanvas = createCanvas(1000, 400);
   useCanvas.parent("greeting");
 
   flock = new Flock();
