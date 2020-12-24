@@ -1,154 +1,179 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://andybrewer.github.io/mvp/mvp.css">
-  <link rel="stylesheet" href="style.css">
-  <title>Brandon Douglas Herford</title>
-</head>
-<body class="pattern-horizontal-lines-md">
-  <main>
-    <!-- Header Navigation -->
-    <nav>
-      <ul>
-        <li><a target="_blank" href="https://github.com/BrandonDH">Github</a></li>
-        <li><a target="_blank" href="https://dribbble.com/BrandonHerford">Dribbble</a></li>
-        <li><a target="_blank" href="mailto:brandonherford@gmail.com">Email</a></li>
-        <li><a target="_blank" href="https://www.linkedin.com/in/brandon-herford-5b01b92b/">LinkedIn</a></li>
-        <li><a target="_blank" href="./brandon-herford.pdf">Resume</a></li>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Brandon Herford</title>
+  </head>
+  <body>
+
+    <main class="container">
+
+      <!-- Header Navigation -->
+      <ul class="nav mb-5">
+        <li class="nav-item">
+          <h1 class="h2">Brandon Douglas Herford</h1>
+        </li>
+        <li class="nav-item mr-5 ml-auto">
+          <a class="h2" target="_blank" href="https://github.com/BrandonDH">Github</a>
+        </li>
+        <li class="nav-item">
+          <a class="h2" target="_blank" href="./brandon-herford.pdf">Resume</a>
+        </li>
       </ul>
-    </nav>
-    <!-- Introduction -->
-    <article>
-      <img width="300" src="./me-giving-a-talk.png" alt="">
-      <h1>Brandon Douglas Herford</h1>
-      <p>I am a <mark>Creative Software Developer</mark> currently using frontend JavaScript, fullstack Python 3 and .NET CORE 3.1. I write software for monitoring heavy <a title="Visit Geo-Instruments.com." target="_blank" href="https://www.geo-instruments.com/">construction and civil engineering</a>. In the past I've spent time working for <a title="This is a jumplink to the agency section." target="_blank" href="#agency">web development agencies</a>. I have a B.F.A in Art and Technology from the <a title="Visit the school of the art institute of chicago website" target="_blank" href="https://www.saic.edu/academics/departments/art-and-technology-studies">School of the Art Institute of Chicago</a></p>
-      <p>Currently programming with .NET CORE 3.1, Python 3, and JavaScript. </p>
-    <article>
-    <!-- Work -->
-    <h2>Projects</h2>
-    <section>
-      <aside>
-        <a target="_blank" href="https://brandondh.github.io/cairnternet/">
-          <h3>Digital Cairn</h3>
-        </a>
-        <p>Build a Cairn, in the age old tradition made digital.</p>
-        <p><a target="_blank" href="https://medium.com/@BrandonHerford/the-digital-cairn-project-688ec39b6150">Read about my process</a></p>
-      </aside>
-      <aside>
-        <a target="_blank" href="https://brandondh.github.io/HayBale/">
-          <h3>Hay Bale</h3>
-        </a>
-        <p>Create a list of hashtags, quickly.</p>
-      </aside>
-      <aside>
-        <a target="_blank" href="https://github.com/BrandonDH/Python-Watermark-Generator">
-          <h3>WTRMRK</h3>
-        </a>
-        <p>Python script to generate >1000 watermarked images in seconds.</p>
-      </aside>
-      <aside>
-        <a target="_blank" href="https://gist.github.com/BrandonDH">
-          <h3>Github Gists</h3>
-        </a>
-        <p>Take a look at snippets of my code, and process.</p>
-      </aside>
-      <aside>
-        <a target="_blank" href="https://medium.com/@BrandonHerford/nosey-app-visual-design-and-ui-3f53db254dd4">
-          <h3>Knosey</h3>
-        </a>
-        <p>Successful User Experience case study for <a target="_blank" herf="https://flatironschool.com/career-courses/ux-ui-design-bootcamp/chicago">Designation.io</a>, 2016</p>
-      </aside>
-      <aside>
-        <a target="_blank" href="https://brandondh.github.io/JavaScript-Name-Scramble/">
-          <h3>JavaScript Name Scramble</h3>
-        </a>
-        <p>JavaScript tool for generating product names.</p>
-      </aside>
-    </section>
-    <!-- Agency -->
-    <div id="agency"></div>
-    <h2>Agency Work</h2>
-    <section class="letter-grid">
-      <div class="item">
-        <h2>A</h2>
-        <a href="https://fostergrant.com/catalog/category/view/s/anarchy-eyewear/id/313/">Anarchy Eyewear</a><br>
-        <a href="https://automattic.com/">Automattic</a><br>
-        <a href="https://www.autoraptor.com/">AutoRaptor</a>
+
+      <div class="row mb-5">
+        <div class="col introduction">
+            <h1 class="h4">Brandon is a developer that uses JavaScript, Python, Flask and .NET. 
+            <h2 class="h4">Currently building products for monitoring heavy <a title="Visit Geo-Instruments.com." target="_blank" href="https://www.geo-instruments.com/">construction and engineering</a>.</h2>
+        </div>
+        <div class="col planes" id="greeting"></div>
       </div>
-      <div class="item">
-        <h2>B</h2>
-        <a href="https://www.bcbs.com/">Blue Cross & Blue Shield</a> <br>
-        <a href="https://www.blue365deals.com/">Blue365Deals</a><br>
-        <a href="https://www.brown.edu/offices/real-estate/">Brown University Real Estate</a>          
+
+      <h2 class="title">Personal Projects</h2>
+      <div class="row mb-5">
+
+        <div class="col-md-4">
+          <a class="h3" target="_blank" href="https://brandondh.github.io/cairnternet/">
+            CairnTernet
+          </a>
+          <p>Build a Cairn, in the age old tradition made digital.</p>
+          <p><a target="_blank" href="https://medium.com/@BrandonHerford/the-digital-cairn-project-688ec39b6150">Read about my process</a></p>
+          <h4 class="code">JavaScript, HTML, CSS</h4>
+        </div>
+
+        <div class="col-md-4">
+          <a target="_blank" href="https://brandondh.github.io/HayBale/">
+            <h3>Hay Bale</h3>
+          </a>
+          <p>Create a list of hashtags, quickly.</p>
+          <h4 class="code">JavaScript, HTML, CSS</h4>
+        </div>
+
+        <div class="col-md-4">
+          <a class="h3" href="https://brandondh.github.io/JavaScript-Name-Scramble/" class="h3">GixmDoo</a>
+          <p>Generate a new product name, by merging two existing names together!</p>
+          <h4 class="code">JavaScript, HTML, CSS</h4>
+        </div>
+        
       </div>
-      <div class="item">
-        <h2>C</h2>
-        <a href="https://call2test.com/">Call2test</a> <br>
-        <a href="https://www.ccl.org/">Center for Creative Leadership</a> <br>
-        <a href="https://www.coldeeze.com/">Cold-Eeze</a><br>
+      <!-- Work -->
+    
+      <div class="row mb-5">
+        <div class="col">
+          <!-- Agency -->
+          <div id="agency"></div>
+          
+          <h2 class="title">Agency Work</h2>
+          <p class="muted">15/26 letters of the alphabet. 11 to go!</p>
+          <section class="letter-grid">
+            <div class="item">
+              <h2>A</h2>
+              <a href="https://fostergrant.com/catalog/category/view/s/anarchy-eyewear/id/313/">Anarchy Eyewear</a><br>
+              <a href="https://automattic.com/">Automattic</a><br>
+              <a href="https://www.autoraptor.com/">AutoRaptor</a>
+            </div>
+            <div class="item">
+              <h2>B</h2>
+              <a href="https://www.bcbs.com/">Blue Cross & Blue Shield</a> <br>
+              <a href="https://www.blue365deals.com/">Blue365Deals</a><br>
+              <a href="https://www.brown.edu/offices/real-estate/">Brown University Real Estate</a>          
+            </div>
+            <div class="item">
+              <h2>C</h2>
+              <a href="https://call2test.com/">Call2test</a> <br>
+              <a href="https://www.ccl.org/">Center for Creative Leadership</a> <br>
+              <a href="https://www.coldeeze.com/">Cold-Eeze</a><br>
+            </div>
+            <div class="item">
+              <h2>E</h2>
+              <a href="https://www.ecosys.net/">Ecosys</a><br>
+              <a href="">EvenOdd Creative</a>
+            </div>
+            <div class="item">
+              <h2>F</h2>
+              <a href="https://fostergrant.com/">Foster Grant</a><br>
+            </div>
+            <div class="item">
+              <h2>H</h2>
+              <a href="https://hatchetsupply.com/">Hatchet Supply Co</a>
+            </div>
+            <div class="item">
+              <h2>K</h2>
+              <a href="https://fostergrant.com/">Keep America Beautiful</a><br>
+            </div>
+            <div class="item">
+              <h2>L</h2>
+              <a href="https://www.lifespan.org/">Lifespan</a><br>
+            </div>
+            <div class="item">
+              <h2>M</h2>
+              <a href="http://myfund.org/">MyFund</a>
+            </div>
+            <div class="item">
+              <h2>O</h2>
+              <a href="https://www.oomphinc.com/">Oomph, Inc</a><br>
+              <a href="https://linchpin.com/clients/ripple-funding/success-story/">Orion</a><br>
+            </div>
+            <div class="item">
+              <h2>P</h2>
+              <a href="https://pick-ease.com/">Pick-Ease</a><br>
+              <a href="https://fostergrant.com/">Providence Public Library</a>
+            </div>
+            <div class="item">
+              <h2>R</h2>
+              <a href="https://linchpin.com/clients/ripple-funding/success-story/">Rippple</a><br>
+              <a href="http://rochestersealpro.com/">Rochester Seal Pro</a>
+            </div>
+            <div class="item">
+              <h2>S</h2>
+              <a href="https://slowroadtravel.com/">Slow Road Travel</a>
+            </div>
+            <div class="item">
+              <h2>U</h2>
+              <a href="https://www.uwri.org/">United Way</a><br>
+            </div>
+            <div class="item">
+              <h2>W</h2>
+              <a href="https://washfunders.org/">WashFunders</a><br>
+              <a href="https://wearecivil.com/">We Are Civil</a>
+            </div>
+          </section>
+        </div>
       </div>
-      <div class="item">
-        <h2>E</h2>
-        <a href="https://www.ecosys.net/">Ecosys</a><br>
-      </div>
-      <div class="item">
-        <h2>F</h2>
-        <a href="https://fostergrant.com/">Foster Grant</a><br>
-      </div>
-      <div class="item">
-        <h2>H</h2>
-        <a href="https://hatchetsupply.com/">Hatchet Supply Co</a>
-      </div>
-      <div class="item">
-        <h2>K</h2>
-        <a href="https://fostergrant.com/">Keep America Beautiful</a><br>
-      </div>
-      <div class="item">
-        <h2>L</h2>
-        <a href="https://www.lifespan.org/">Lifespan</a><br>
-      </div>
-      <div class="item">
-        <h2>M</h2>
-        <a href="http://myfund.org/">MyFund</a>
-      </div>
-      <div class="item">
-        <h2>O</h2>
-        <a href="https://www.oomphinc.com/">Oomph, Inc</a><br>
-        <a href="https://linchpin.com/clients/ripple-funding/success-story/">Orion</a><br>
-      </div>
-      <div class="item">
-        <h2>P</h2>
-        <a href="https://pick-ease.com/">Pick-Ease</a><br>
-        <a href="https://fostergrant.com/">Providence Public Library</a>
-      </div>
-      <div class="item">
-        <h2>R</h2>
-        <a href="https://linchpin.com/clients/ripple-funding/success-story/">Rippple</a><br>
-        <a href="http://rochestersealpro.com/">Rochester Seal Pro</a>
-      </div>
-      <div class="item">
-        <h2>U</h2>
-        <a href="https://www.uwri.org/">United Way</a><br>
-      </div>
-      <div class="item">
-        <h2>W</h2>
-        <a href="https://washfunders.org/">WashFunders</a><br>
-        <a href="https://wearecivil.com/">We Are Civil</a>
-      </div>
-    </section>
-    <!-- Footer Navigation -->
-      <nav class="footer">
-        <ul>
-          <li><a target="_blank" href="https://github.com/BrandonDH">Github</a></li>
-          <li><a target="_blank" href="https://dribbble.com/BrandonHerford">Dribbble</a></li>
-          <li><a target="_blank" href="mailto:brandonherford@gmail.com">Email</a></li>
-          <li><a target="_blank" href="https://www.linkedin.com/in/brandon-herford-5b01b92b/">LinkedIn</a></li>
-          <li><a target="_blank" href="./brandon-herford.pdf">Resume</a></li>
-        </ul>
-      </nav>
-  </main>
-  <script src="./app.js"></script>
-</body>
+
+      <!-- Footer Navigation -->
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link target="_blank" href="https://github.com/BrandonDH">Github</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="mailto:brandonherford@gmail.com">Email</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="https://dribbble.com/BrandonHerford">Dribbble</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="https://github.com/BrandonDH">Github</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="./brandon-herford.pdf">Resume</a>
+        </li>
+      </ul>
+    </main>
+    <!-- P5.js -->
+    <script src="./app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  </body>
 </html>
