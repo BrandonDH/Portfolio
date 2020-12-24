@@ -8,15 +8,23 @@
 
 body {
   padding: 0;
-  margin: 1rem;
+  margin: 1rem 0;
   font-family: 'JetBrains Mono', monospace;
+}
+
+a {
+  color: #000;
 }
 
 .introduction {
   position: absolute;
   top: 15rem;
-  width: 75%;
-  padding: 2rem;
+  width: 80%;
+}
+
+.introduction h1 {
+  font-weight: bold;
+  line-height: 3rem;
 }
 
 img {
@@ -29,7 +37,7 @@ img:hover {
 
 .code {
   font-weight: bolder;
-  color: black;
+  color: rgb(13, 110, 253);
 }
 
 .title {
@@ -108,6 +116,10 @@ img:hover {
   font-size: 10rem;
   font-weight: bolder;
   color: black;
+}
+
+.item {
+  text-align: left !important;
 }
 
 .item:hover {

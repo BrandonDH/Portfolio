@@ -6,7 +6,7 @@ function setup() {
 
   flock = new Flock();
   // Add an initial set of boids into the system
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 10; i++) {
     let b = new Boid(width / 1,height / 1);
     flock.addBoid(b);
   }
@@ -115,16 +115,27 @@ Boid.prototype.render = function() {
   // Draw a triangle rotated in the direction of velocity
   let theta = this.velocity.heading() + radians(90);
   fill(255);
-  stroke(0);
+  stroke(13, 110, 253);
   strokeWeight(2);
   push();
   translate(this.position.x, this.position.y);
   rotate(theta);
-  beginShape();
-  vertex(5, -this.r * 10);
-  vertex(5, this.r * 10);
+  beginShape(LINES);
 
-  vertex(-this.r, this.r * 5);
+  vertex(0, -this.r * 2);
+  vertex(-this.r, this.r * 2);
+
+  vertex(this.r, this.r * 2);
+  // vertex(10, 50);
+  // vertex(90, 30); 
+  // vertex(10, 50);
+  // vertex(90, 60);
+  // vertex(10, 50);
+  // vertex(90, 70);
+  // vertex(90, 30);
+  // vertex(90, 70);
+
+  
 
   endShape(CLOSE);
   pop();
