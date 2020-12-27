@@ -1,15 +1,19 @@
 let flock;
 
 function setup() {
-  let useCanvas = createCanvas(1000, 400);
+  let useCanvas = createCanvas(windowWidth, 600);
   useCanvas.parent("greeting");
-
+  
   flock = new Flock();
   // Add an initial set of boids into the system
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < 10; i++) {
     let b = new Boid(width / 1,height / 1);
     flock.addBoid(b);
   }
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
@@ -40,7 +44,7 @@ Flock.prototype.run = function() {
   }
 }
 
-Flock.prototype.addBoid = function(b) {
+Flock.prototype.addBoid = function(b, h) {
   this.boids.push(b);
 }
 
@@ -124,18 +128,7 @@ Boid.prototype.render = function() {
 
   vertex(0, -this.r * 2);
   vertex(-this.r, this.r * 2);
-
   vertex(this.r, this.r * 2);
-  // vertex(10, 50);
-  // vertex(90, 30); 
-  // vertex(10, 50);
-  // vertex(90, 60);
-  // vertex(10, 50);
-  // vertex(90, 70);
-  // vertex(90, 30);
-  // vertex(90, 70);
-
-  
 
   endShape(CLOSE);
   pop();
