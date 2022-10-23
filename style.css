@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,100&display=swap');
 
 * {
@@ -7,8 +6,6 @@
 }
 
 body {
-  padding: 0;
-  margin: 1rem 0;
   font-family: 'JetBrains Mono', monospace;
 }
 
@@ -20,25 +17,6 @@ body {
 
 a {
   color: #000;
-}
-
-.introduction {
-  position: absolute;
-  top: 12rem;
-  width: 90%;
-}
-
-.introduction h1 {
-  font-weight: bold;
-  line-height: 3rem;
-}
-
-img {
-  margin: 2rem;
-}
-
-img:hover {
-  transform: skew(-15deg, 0deg);
 }
 
 .code {
@@ -100,19 +78,17 @@ img:hover {
   padding: 3rem;
 }
 
-.main-title {
-  font-weight: bolder;
-  font-size: 10rem;
+.featureImg {
+  width: 100%;
 }
 
-.mybody{
+.mybody {
   z-index: 0;
-  background-image: url(./me-flying-plane.png);
-  height: 100%;
-  width: 100%;
-  border-radius: 1rem;
-  background-size: cover;
-}
+  /* background-image: url(./me-giving-a-talk.png); */
+  height: 10rem;
+  /* width: 100%; */
+  background-size: contain;
+  background-repeat: no-repeat;}
 
 .footer {
   margin-top: 4rem;
