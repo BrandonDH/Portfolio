@@ -24,8 +24,6 @@
 }
 
 p {
-  /* color: forestgreen; */
-  /* font-family: monospace; */
   font-size: 1.25rem;
   line-height: 2em;
 }
@@ -53,7 +51,7 @@ font-weight: bold;
 }
 
 ul {
-  padding-left: 1em;
+  padding-left: 0;
 }
 
 li {
@@ -88,7 +86,7 @@ nav {
 
 @media only screen and (min-width: 900px) {
   .bdh--brandon-body {
-    margin: 0 8em;
+    margin: 0 10em;
   }
   article {
     margin-bottom: 5em;
