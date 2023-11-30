@@ -103,6 +103,9 @@ article {
   .bdh--brandon-body {
     padding: 0 1em;
   }
+  .bdh--projects-section a {
+    flex-wrap: wrap;
+  }
   article {
    margin: 0;
   }
