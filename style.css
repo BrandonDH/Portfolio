@@ -3,8 +3,8 @@
 .bdh--brandon-body {
   font-family: 'Work Sans', sans-serif;
   font-size: 16px;
-  margin: 1em 5em;
-  background-color: floralwhite;
+  /* background-color: floralwhite; */
+  margin: unset;
 }
 
 .bdh--details {
@@ -14,27 +14,28 @@
   text-transform: capitalize;
 }
 
-.rainbow-pixel-canvas {
-  width: 100%;
-  height: 200px;
-  box-sizing: border-box;
-  background: white;
-  user-select: none;
-  touch-action: none;
+.bdh--projects-section li {
+  border-bottom: 1px solid rgb(16, 61, 16);
 }
 
-p {
-  font-size: 1.25rem;
-  line-height: 2em;
-}
-
-.bdh-images {
+.bdh--projects-section a {
   display: flex;
+  padding: 1em 1.5em;
+
+  &:hover {
+    background-color: rgb(244, 236, 219);
+  }
+}
+
+.bdh--history {
+background-color: rgb(244, 236, 219);
+/* color: rgb(244, 236, 219); */
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
   color: rgb(16, 61, 16);
+  padding: 0 1em;
 }
 
 h1 {
@@ -46,8 +47,14 @@ h1 {
 }
 
 h1 a {
-text-transform: lowercase;
-font-weight: bold;
+  text-transform: lowercase;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 2em;
+  padding: 0 1em;
 }
 
 ul {
@@ -68,39 +75,38 @@ a:hover {
 }
 
 nav {
-  margin: 1em 0 5em 0;
+  padding: 1em 5em;
 }
 
-.bdh--project-section li {
-  border-bottom: 1px solid rgb(16, 61, 16);
+footer {
+  background-color: rgb(244, 236, 219);
+  /* border-top: solid 1px #000; */
 }
 
-.bdh--project-section a {
-  display: flex;
-  padding: 1em 0;
-
-  &:hover {
-    background-color: rgb(244, 236, 219);
-  }
+article {
+  padding: 1em 0 4em 0;
+  margin: 0 5em;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
 }
 
-@media only screen and (min-width: 900px) {
-  .bdh--brandon-body {
-    margin: 0 10em;
-  }
-  article {
-    margin-bottom: 5em;
-  }
-}
+/* Media queries */
+@media only screen and (min-width: 900px) {}
 
 @media only screen and (max-width: 899px) {
+  h1, h2, p {
+    font-size: 1em;
+  }
   .bdh--details {
-    font-size: .8em;
+    font-size: .7em;
   }
   .bdh--brandon-body {
-    margin: 0 1em;
+    padding: 0 1em;
   }
   article {
-    margin-bottom: 3em;
+   margin: 0;
+  }
+  nav {
+    padding: 1em 0;
   }
 }
