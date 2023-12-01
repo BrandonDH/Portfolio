@@ -3,7 +3,7 @@
 .bdh--brandon-body {
   font-family: 'Work Sans', sans-serif;
   font-size: 16px;
-  /* background-color: floralwhite; */
+  background-color: rgb(255, 254, 238);
   margin: unset;
 }
 
@@ -46,9 +46,21 @@ h1 {
   line-height: 1.8em;
 }
 
+a {
+  color: black;
+  &:hover {
+    color: black;
+  }
+
+  &:visited {
+    color: black;
+  }
+}
+
 h1 a {
   text-transform: lowercase;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 p {
