@@ -45,9 +45,36 @@ body, html {
   text-transform: capitalize;
 }
 
+.bdh--name {
+  /* position: relative; */
+  top: -250px;
+}
+
+.bdh--ladder-wrapper {
+  position: absolute;
+  z-index: 0;
+  top: -2em;
+}
+
 .bdh--title {
   font-size: 2em;
   margin: 0;
+}
+
+.bdh--introduction-wrapper {
+  display: flex;
+}
+
+.bdh--goat {
+  background-image: url('./images/friendOfGoats.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-size: cover;
+  background-position-y: 0em;
+  background-position-x: 0em;
+  border-radius: 1em;
+  width: 12em;
+  height: 18em;
 }
 
 h1 {
@@ -94,10 +121,15 @@ nav {
 }
 
 article {
+  z-index: 1;
   border-left: 1px solid #000;
   border-right: 1px solid #000;
   padding: 1em;
   margin: 0 1em;
+}
+
+section {
+  z-index: 1;
 }
 
 /* DESKTOP */
@@ -124,7 +156,7 @@ article {
     display: flex;
     align-items: center;
 
-    /* &::after {
+    &::after {
       content: '';
       background-image: url('./images/friendOfGoats.png');
       background-repeat: no-repeat;
@@ -139,8 +171,9 @@ article {
       animation: moveLeftRight 2s linear infinite;
     }
 
-    &.bloom-a::after {
+    &.bdh--work-cold-eeze::after {
       background-image: url('./images/bdh_cold_eeze_desktop.png'); 
+      right: 50%;
     }
 
     &.bloom-b::after {
@@ -153,7 +186,7 @@ article {
         opacity: 1;
         transition: opacity 1s .2s ease-out;
       }
-    } */
+    }
   }
   @keyframes moveLeftRight {
     0%, 100% {
