@@ -50,6 +50,10 @@ body, html {
   top: -250px;
 }
 
+.bdh--spline {
+  height: 20em;
+}
+
 .bdh--ladder-wrapper {
   position: absolute;
   z-index: 0;
