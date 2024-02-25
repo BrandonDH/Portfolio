@@ -160,29 +160,7 @@ section {
     display: flex;
     align-items: center;
 
-    &::after {
-      content: '';
-      background-image: url('./images/friendOfGoats.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      height: 18em;
-      width: 23em;
-      right: 30%;
-      border-radius: 2em;
-      position: absolute;
-      opacity: 0;
-      animation: moveLeftRight 2s linear infinite;
-    }
 
-    &.bdh--work-cold-eeze::after {
-      background-image: url('./images/bdh_cold_eeze_desktop.png'); 
-      right: 50%;
-    }
-
-    &.bloom-b::after {
-      background-image: url('./images/bloom_b.png');
-    }
 
     &:hover {
 
@@ -192,34 +170,8 @@ section {
       }
     }
   }
-  @keyframes moveLeftRight {
-    0%, 100% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(5px); /* Adjust the distance as needed */
-    }
-  }
-  @-webkit-keyframes AnimationName {
-    0%{background-position:99% 0%}
-    50%{background-position:2% 100%}
-    100%{background-position:99% 0%}
-  }
-  @-moz-keyframes AnimationName {
-    0%{background-position:99% 0%}
-    50%{background-position:2% 100%}
-    100%{background-position:99% 0%}
-  }
-  @-o-keyframes AnimationName {
-    0%{background-position:99% 0%}
-    50%{background-position:2% 100%}
-    100%{background-position:99% 0%}
-  }
-  @keyframes AnimationName {
-    0%{background-position:99% 0%}
-    50%{background-position:2% 100%}
-    100%{background-position:99% 0%}
-  }
+
+
 
   article {
     margin: 0 5em;
