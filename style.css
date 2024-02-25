@@ -1,17 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,400;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Work+Sans:ital,wght@0,100;0,400;1,900&display=swap');
 
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-color: #f5f5f5;
-}
-
 /* MOBILE */
 .bdh--brandon-body {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+
+  background-color: #f5f5f5;
+
+  inline-size: clamp(16rem, 93vw, 120rem);
+  margin-inline: auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* #f2ecdb yellow */
+:is(header, main, footer).landmark {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+}
+
+article.about > .bdh--spline {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+article.about > .bdh--introduction-wrapper {
+  grid-column: 2 / 4;
+  grid-row: 2;
+}
+
+article.intro > section {
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+article.history {
+  grid-column: 1 / -1;
+  grid-row: 5;
+}
+
+/* > section:last-of-type */
+article.bdh--projects-section  { 
+  grid-column: 1 / -1;
+  grid-row: 3;
+}
+
+/* article.bdh--projects-section */
+
+main.landmark > article {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
 }
 
 .bdh--intro-inner {
@@ -138,6 +179,20 @@ section {
 
 /* DESKTOP */
 @media only screen and (min-width: 900px) {
+  .bdh--history > article {
+    display: flex;
+  }
+
+  .bdh--history > .bdh--my-words {
+    /* display: flex; */
+    /* position: relative; */
+    /* top: -35em; */
+  }
+  
+  .bdh--spline-vertical {
+    width: 100%;
+    height: 40em;
+  }
 
   .bdh--details {
     text-decoration: none;
@@ -156,7 +211,7 @@ section {
     width: 100%;
   }
 
-  .bdh--item {
+  /* .bdh--item {
     display: flex;
     align-items: center;
 
@@ -191,7 +246,7 @@ section {
         transition: opacity 1s .2s ease-out;
       }
     }
-  }
+  } */
   @keyframes moveLeftRight {
     0%, 100% {
       transform: translateX(0);
