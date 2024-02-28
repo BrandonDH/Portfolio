@@ -23,6 +23,24 @@ body, html {
   right: 0em;
 }
 
+.bdh--web-links {
+  border: solid black 1px;
+  border-radius: 4em;
+  background-color: chartreuse;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8em;
+  padding: 1em;
+  display: block;
+  margin-bottom: 1em;
+
+
+  &:hover {
+    background-color: rgb(110, 218, 2);
+  }  
+}
+
 .bdh--projects-section li {
   border-bottom: 1px solid rgb(16, 61, 16);
 }
@@ -160,18 +178,13 @@ section {
     display: flex;
     align-items: center;
 
-
-
     &:hover {
-
       &::after {
         opacity: 1;
         transition: opacity 1s .2s ease-out;
       }
     }
   }
-
-
 
   article {
     margin: 0 5em;
