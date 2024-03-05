@@ -25,20 +25,28 @@ body, html {
 
 .bdh--web-links {
   border: solid black 1px;
-  border-radius: 4em;
-  background-color: chartreuse;
+  background-color: coral;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: .8em;
   padding: 1em;
   display: block;
-  margin-bottom: 1em;
-
+  margin: 1em 0;
 
   &:hover {
-    background-color: rgb(110, 218, 2);
+    background-color: rgb(255, 168, 137);
+    text-decoration: none;
   }  
+}
+
+.bdh--web-links-grid {
+  display: grid;
+  column-gap: 1em;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+  .grid-item {
+    height: 80%;
+  }
 }
 
 .bdh--projects-section li {
@@ -64,7 +72,6 @@ body, html {
 }
 
 .bdh--name {
-  /* position: relative; */
   top: -250px;
 }
 
