@@ -33,12 +33,16 @@ body, html {
   margin: 1em 0;
 
   &:hover {
-    background-color: coral;
+    background-color: #FF5722;
     text-decoration: none;
   }  
 }
 
 .bdh--lab {
+  /* background-image: url(./images/candelabra-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover; */
+
   .bdh--web-links {
     border: solid black 1px;
 
@@ -81,14 +85,6 @@ body, html {
   text-transform: capitalize;
 }
 
-
-
-.bdh--ladder-wrapper {
-  position: absolute;
-  z-index: 0;
-  top: -2em;
-}
-
 .bdh--title {
   font-size: 2em;
   margin: 0;
@@ -127,6 +123,7 @@ p {
 
 a {
   color: black;
+
   &:hover {
     color: black;
   }
